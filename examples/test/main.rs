@@ -25,7 +25,7 @@ fn main() {
 		Some(dev) => {
 			match dev.open() {
 				Ok(handle) => {
-					let handle1 = handle.clone();
+					/*let handle1 = handle.clone();
 					let handle2 = handle.clone();
 
 					let t1 = Thread::scoped(move || {
@@ -59,6 +59,7 @@ fn main() {
 
 					t1.join().ok().unwrap();
 					t2.join().ok().unwrap();
+					*/
 				},
 				Err(code) => {
 					println!("Error opening device: {:?}", code);
